@@ -6,140 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEM-TECH-INNOVATIONS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <head>
+    <header>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FEM-TECH-INNOVATIONS</title>
         <link rel="stylesheet" href="CopiaFem.css">
-    </head>
+    </header>
 
     <body>
         <nav>
             <div class="navbar">
                 <div class="Fem-tech">
-                <img src="" alt="">
-            <h1> FEM-TECH-INNOVATIONS</h1>
+                    <img src="" alt="">
+                    <h1> FEM-TECH-INNOVATIONS</h1>
                 </div>
-                <div class="busqueda">
-            <p>¿Quiénes somos?</p>
-            <p>Ayuda</p>
-            <form action="/buscar" method="get">
-                <label for="busqueda"></label>
-                <input type="text" id="busqueda" name="q" placeholder="Escribe tu búsqueda aquí" required>
-                <input type="submit"
-                value="Buscar">
-            </form>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            </div>
-            </div>
-            <div class="shipping">
-                <p> Envío Gratis a partir de 49$</p>
-            </div>
-            
-        </nav>
-            <div class="content">
-
-                <div class="sidebar">
-
-                    <div class="container" id="brand_selector">
-
-                        <div class="container__title">Elige tu modelo:</div>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-
-                                <div class="container__holder_img">
-                                    <img src="https://content1.rozetka.com.ua/goods/images/big/275573118.jpg"
-                                        alt="image-of-phone">
-                                    <img class="img_icon" src="https://cdn-icons-png.flaticon.com/128/882/882840.png" alt="icon-huawei">
+                <div class="navbarright">
+                    <p>¿Quiénes somos?</p>
+                    <p>Ayuda</p>
+                    <form action="/buscar" method="get">
+                        <label for="busqueda"></label>
+                        <input type="text" id="busqueda" name="q" placeholder="Escribe tu búsqueda aquí" required>
+                        <input type="submit" value="Buscar">
+                    </form>
+                    <img src="" alt="">
+                    <img src="/Users/sandramedinaluque/Downloads/gratis-png-iconos-de-computadora-inicio-de-sesion-persona-usuario-pessoa-thumbnail.png"
+                        alt="login" id="userImage">
+                    <div class="modal" id="userModal">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Regístrate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-
-                                <div class="container__holder_item" id="huawei">Huawei</div>
-                            </div>
-                        </a>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-                                <div class="container__holder_img">
-                                    <img src="https://m.media-amazon.com/images/I/61Z9q1+EINL._AC_SX569_.jpg"
-                                        alt="image-of-phone">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/12940/12940283.png"
-                                        alt="icon-iphone">
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="nombre">Usuario:</label>
+                                            <input type="text" class="form-control" id="nombre"
+                                                placeholder="Ingrese su nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Contraseña:</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Ingrese su correo electrónico">
+                                        </div>
+                                    </form>
                                 </div>
-
-                                <div class="container__holder_item" id="iphone">iPhone</div>
-                            </div>
-                        </a>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-                                <div class="container__holder_img">
-                                    <img src="https://content.rozetka.com.ua/goods/images/big/319076455.jpg"
-                                        alt="image-of-phone">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/882/882809.png"
-                                        alt="icon-motorola">
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Enviar</button>
                                 </div>
-                                <div class="container__holder_item" id="motorola">Motorola</div>
                             </div>
-                        </a>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-                                <div class="container__holder_img">
-                                    <img src="https://content2.rozetka.com.ua/goods/images/big/374400998.jpg"
-                                        alt="image-of-phone">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/882/882847.png" alt="icon-oppo">
-                                </div>
-                                <div class="container__holder_item" id="oppo">Oppo</div>
-                            </div>
-                        </a>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-                                <div class="container__holder_img">
-                                    <img src="https://content2.rozetka.com.ua/goods/images/big/321452589.jpg"
-                                        alt="image-of-phone">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/5969/5969116.png"
-                                        alt="icon-samsung">
-                                </div>
-                                <div class="container__holder_item" id="samsung">Samsung</div>
-                            </div>
-                        </a>
-
-                        <a href="#"> <!--Poner link!!!!!!!!!-->
-                            <div class="container__holder">
-                                <div class="container__holder_img">
-                                    <img src="https://i.citrus.world/imgcache/size_800/uploads/shop/f/7/f7ea7fe12021df8f73784c0e9f7a939c.jpg"
-                                        alt="image-of-phone">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/732/732148.png" alt="icon-xiaomi">
-                                </div>
-
-                                <div class="container__holder_item" id="xiaomi">Xiaomi</div>
-                            </div>
-                        </a>
-
+                        </div>
                     </div>
 
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="shipping">
+                <p class="Envío_gratis"> Envío Gratis a partir de 49$</p>
+            </div>
+
+        </nav>
+        <div class="content">
+
+            <div class="sidebar">
+
+                <div class="container" id="brand_selector">
+
+                    <div class="container__title">Elige tu modelo:</div>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+
+                            <div class="container__holder_img">
+                                <img src="https://content1.rozetka.com.ua/goods/images/big/275573118.jpg"
+                                    alt="image-of-phone">
+                                <img class="img_icon" src="https://cdn-icons-png.flaticon.com/128/882/882840.png"
+                                    alt="icon-huawei">
+                            </div>
+
+                            <div class="container__holder_item" id="huawei">Huawei</div>
+                        </div>
+                    </a>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+                            <div class="container__holder_img">
+                                <img src="https://m.media-amazon.com/images/I/61Z9q1+EINL._AC_SX569_.jpg"
+                                    alt="image-of-phone">
+                                <img src="https://cdn-icons-png.flaticon.com/128/12940/12940283.png" alt="icon-iphone">
+                            </div>
+
+                            <div class="container__holder_item" id="iphone">iPhone</div>
+                        </div>
+                    </a>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+                            <div class="container__holder_img">
+                                <img src="https://content.rozetka.com.ua/goods/images/big/319076455.jpg"
+                                    alt="image-of-phone">
+                                <img src="https://cdn-icons-png.flaticon.com/128/882/882809.png" alt="icon-motorola">
+                            </div>
+                            <div class="container__holder_item" id="motorola">Motorola</div>
+                        </div>
+                    </a>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+                            <div class="container__holder_img">
+                                <img src="https://content2.rozetka.com.ua/goods/images/big/374400998.jpg"
+                                    alt="image-of-phone">
+                                <img src="https://cdn-icons-png.flaticon.com/128/882/882847.png" alt="icon-oppo">
+                            </div>
+                            <div class="container__holder_item" id="oppo">Oppo</div>
+                        </div>
+                    </a>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+                            <div class="container__holder_img">
+                                <img src="https://content2.rozetka.com.ua/goods/images/big/321452589.jpg"
+                                    alt="image-of-phone">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5969/5969116.png" alt="icon-samsung">
+                            </div>
+                            <div class="container__holder_item" id="samsung">Samsung</div>
+                        </div>
+                    </a>
+
+                    <a href="#"> <!--Poner link!!!!!!!!!-->
+                        <div class="container__holder">
+                            <div class="container__holder_img">
+                                <img src="https://i.citrus.world/imgcache/size_800/uploads/shop/f/7/f7ea7fe12021df8f73784c0e9f7a939c.jpg"
+                                    alt="image-of-phone">
+                                <img src="https://cdn-icons-png.flaticon.com/128/732/732148.png" alt="icon-xiaomi">
+                            </div>
+
+                            <div class="container__holder_item" id="xiaomi">Xiaomi</div>
+                        </div>
+                    </a>
 
                 </div>
 
 
-
-
-
-                <div class="carousel"></div>
-                <div class="promotion"></div>
-                <div class="products"></div>
             </div>
-            <footer class="footbar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quidem repellat
-                modi omnis sit recusandae, ea molestias qui obcaecati quod, eligendi ipsa excepturi est eius dignissimos
-                quibusdam. A, dolorem eum. </footer>
+
+
+
+
+
+            <div class="carousel"></div>
+            <div class="promotion"></div>
+            <div class="products"></div>
+        </div>
+        <footer class="footbar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quidem repellat
+            modi omnis sit recusandae, ea molestias qui obcaecati quod, eligendi ipsa excepturi est eius dignissimos
+            quibusdam. A, dolorem eum. </footer>
         </div>
     </body>
 
