@@ -7,12 +7,37 @@
 }
 
 
+/*--------------------------------NAVEGATOR---------------------------*/
+
+.enlace-personalizado {
+    color: #010102;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.enlace-personalizado:hover {
+    color: #0056b3;
+
+}
+
 nav {
     display: flex;
     flex-direction: column;
     background-color: #F4DFC8;
 
+}
 
+#logfem {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+
+}
+
+.Fem-tech {
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -28,7 +53,28 @@ nav {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-   
+
+}
+
+.ayuda {
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ayuda:hover+.popup {
+    display: block;
 }
 
 .shipping {
@@ -53,9 +99,20 @@ nav {
 
 }
 
+#lang {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+
+}
+
+#lang:hover+#userModal {
+    display: block;
+}
+
 #userImage {
-    height: 30px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
 
 }
 
@@ -74,19 +131,25 @@ nav {
     display: block;
 }
 
+.cart-content {
+    display: none;
+    position: fixed;
+    top: 22%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 
+}
 
+.show-cart:hover .cart-content {
+    display: block;
+}
 
-
-
-
-
-
-
-
-
-
-
+#shop {
+    height: 20px;
+    width: 20px;
+    margin-top: -8px;
+}
 
 /*-----------------------------Parte principal------------------------*/
 .content {
@@ -94,8 +157,8 @@ nav {
     background-color: blueviolet;
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 450px 150px 1fr;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+
 }
 
 /*---------GRIT----------*/
@@ -122,13 +185,6 @@ nav {
 
 
 
-
-
-/*-----------------------------FOOTER------------------------------*/
-.footbar {
-    background-color: aqua;
-}
-
 /*---------------------------SideBar-------------------------------*/
 
 .sidebar {
@@ -139,14 +195,12 @@ nav {
 .container {
     background-color: #F4DFC8;
     max-width: 250px;
-    height: 65%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2px;
     border-radius: 5px;
-    /*box-shadow: 0 0 10px rgba(255, 0, 221, 0.8);*/
-
 }
 
 
@@ -155,14 +209,10 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /*border: 0.2px solid rgba(105, 15, 179, 0.322);*/
     border-radius: 5px;
     margin: 7px;
     padding: 1px;
     position: relative;
-
-
-
 }
 
 /*------------------ANIMATION--------------*/
@@ -176,35 +226,23 @@ nav {
     height: 100%;
     border: 0px solid transparent;
     border-radius: 5px;
-    /* за необхідності */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.87);
-    /* тінь і прозорість */
+    box-shadow: 0 0 10px #634813cc;
     transition: box-shadow 0.3s ease-in-out;
-    /* анімація сяйва */
 }
 
 .container__holder:hover::before {
-    box-shadow: 0 0 20px rgba(255, 0, 221, 0.8);
-    /* більша тінь при наведенні */
+    box-shadow: 0 0 20px #f1a10ab9;
     transform: scale(1.1);
 }
 
 
-
-
 .container__holder_img {
-    /*border: 2px solid black;*/
     height: 40px;
     width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
-
 }
-
-
 
 
 .container__holder_img img {
@@ -213,8 +251,6 @@ nav {
     height: 100%;
     max-width: 100%;
     border-radius: 10%;
-
-
 }
 
 .container__holder_item {
@@ -225,4 +261,88 @@ nav {
 .container a {
     text-decoration: none;
     color: black;
+}
+
+
+/*-------------------FILTER----------------------*/
+
+#filter {
+
+    box-shadow: 0 0 10px #634813;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+.title-filter_img {
+    width: 25px;
+    height: auto;
+    border: 1px solid #cebda3;
+    border-radius: 5px;
+    background-color: #FAF6F0;
+}
+
+.status-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.title-label,
+.container__title {
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.minmax-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price {
+    width: 45%;
+    font-size: 12px !important;
+}
+
+.form-control {
+    border-radius: 10px;
+    background-color: #FAF6F0;
+    border: none;
+
+
+}
+
+.btn-result {
+    background-color: #FAF6F0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #634813;
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+    padding: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+
+}
+
+.btn-result:hover {
+    background-color: #e9c9aa;
+    color: #fff;
+    border: 1px solid #634813;
+    transform: scale(1.05);
+}
+
+
+
+
+/*-----------------------------FOOTER------------------------------*/
+.footbar {
+    background-color: aqua;
 }
