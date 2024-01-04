@@ -80,6 +80,13 @@ nav {
     display: block;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
 .shipping {
     text-align: center;
     background-color: #F6E7cf;
@@ -118,6 +125,7 @@ nav {
     width: 20px;
     margin-left: 6px;
     margin-right: 6px;
+
 
 }
 
@@ -164,7 +172,7 @@ nav {
     grid-template-columns: 25% 1fr;
     background-color: #F4DFC8;
     grid-template-rows: 50% 50%;
-    
+
 
 
 }
@@ -185,8 +193,8 @@ nav {
 .promotion {
     background-color: #F4DFC8;
     grid-area: 2/2;
-   margin-top: 5px;
-   
+    margin-top: 5px;
+
 }
 
 
@@ -372,6 +380,12 @@ i {
 
 @media screen and (max-width: 900px) {
 
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
 
     .content {
         flex-direction: column;
@@ -384,13 +398,13 @@ i {
 
     .carousel {
         grid-area: 1, 2;
-        
+
     }
 
     .promotion {
         grid-area: 2, 2;
-       
-       
+
+
     }
 
     #filter-form {
@@ -404,134 +418,51 @@ i {
 
     .title-filter_img {
         display: block;
-        
-        
+
+
     }
 
     .title-label {
         display: none;
-       
+
     }
+
     .container__holder_item {
         display: none;
 
     }
-    .container__holder{
+
+    .container__holder {
         flex-direction: row;
         justify-items: center;
         align-items: center;
     }
 
-    
-}
-
-@media screen and (max-width: 800px) {
-
-    .content {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        grid-area: 1, 1;
-    }
-
-
-    .carousel {
-        grid-area: 1, 2;
-        
-    }
-
-    .promotion {
-        grid-area: 2, 2;
-       
-        
-    }
-
-    #filter-form {
-        display: none;
-    }
-
-    #filter:hover #filter-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title-filter_img {
-        display: block;
-        margin-bottom: 5px;
-        
-    }
-
-    .title-label {
-        display: none;
-       
-    }
-    .container__holder_item {
-        display: none;
-
-    }
-    .container__holder{
-        flex-direction: row;
-        justify-items: center;
-        justify-items: center;
-    }
-   
-}
-@media screen and (max-width: 700px) {
-
-    .content {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        grid-area: 1, 1;
-    }
-
-
-    .carousel {
-        grid-area: 1, 2;
-        
-    }
-
-    .promotion {
-        grid-area: 2, 2;
-        
-      
-       
-    }
-
-    #filter-form {
-        display: none;
-    }
-
-    #filter:hover #filter-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title-filter_img {
-        display: block;
-        margin-bottom: 5px;
-        
-    }
-
-    .title-label {
-        display: none;
-       
-    }
-    .container__holder_item {
-        display: none;
-
-    }
-    .container__holder{
-        flex-direction: row;
-        justify-items: center;
-        justify-items: center;
-    }
 
 }
+
 @media screen and (max-width: 600px) {
 
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .navbarright {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+
+
+    }
+
     .content {
         flex-direction: column;
     }
@@ -543,13 +474,18 @@ i {
 
     .carousel {
         grid-area: 1, 2;
-        
+
     }
 
     .promotion {
         grid-area: 2, 2;
-        
-       
+
+
+    }
+
+    .img_phone {
+        display: none;
+
     }
 
     #filter-form {
@@ -564,22 +500,24 @@ i {
     .title-filter_img {
         display: block;
         margin-bottom: 5px;
-        
+
     }
 
     .title-label {
         display: none;
-       
+
     }
+
     .container__holder_item {
         display: none;
 
     }
-    .container__holder{
+
+    .container__holder {
         flex-direction: row;
         justify-items: center;
         align-items: center;
     }
 
-   
+
 }

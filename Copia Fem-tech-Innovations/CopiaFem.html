@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 
@@ -40,81 +40,86 @@
                         <input type="text" id="busqueda" name="q" placeholder="Escribe tu búsqueda aquí" required>
                         <input type="submit" value="Buscar">
                     </form>
-                    <img src="https://cdn-icons-png.flaticon.com/512/435/435954.png" alt="" id="lang">
-                    <div class="modal" id="language">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">English</h5>
-                                    <h5 class="modal-title">Spanish</h5>
+                    <div class="icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/435/435954.png" alt="" id="lang">
+                        <div class="modal" id="language">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">English</h5>
+                                        <h5 class="modal-title">Spanish</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/50/50050.png" alt="login" id="userImage">
-                    <div class="modal" id="userModal">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Clientes</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="nombre">Usuario:</label>
-                                            <input type="text" class="form-control" id="nombre"
-                                                placeholder="Ingrese su nombre">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Contraseña:</label>
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Ingrese su Contraseña">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Regístrate</button>
-                                    <button type="button" class="btn btn-primary">Iniciciar sesión en su cuenta</button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/50/50050.png" alt="login" id="userImage">
+                        <div class="modal" id="userModal">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Clientes</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="nombre">Usuario:</label>
+                                                <input type="text" class="form-control" id="nombre"
+                                                    placeholder="Ingrese su nombre">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Contraseña:</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Ingrese su Contraseña">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Regístrate</button>
+                                        <button type="button" class="btn btn-primary">Iniciciar sesión en su
+                                            cuenta</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="show-cart">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png" alt="" id="shop">
-                        <div class="cart-content">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Producto</th>
-                                        <th scope="col">Precio</th>
-                                        <th scope="col">Cantidad</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Producto 1</td>
-                                        <td>150$</td>
-                                        <td>2</td>
-                                        <td>300$</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Producto 2</td>
-                                        <td>30.00$</td>
-                                        <td>1</td>
-                                        <td>30.00$</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="text-right">
-                                <h4>Total: 330.00$</h4>
-                                <button class="btn btn-primary">Pagar</button>
+                        <div class="show-cart">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png" alt="" id="shop">
+                            <div class="cart-content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Producto 1</td>
+                                            <td>150$</td>
+                                            <td>2</td>
+                                            <td>300$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Producto 2</td>
+                                            <td>30.00$</td>
+                                            <td>1</td>
+                                            <td>30.00$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-right">
+                                    <h4>Total: 330.00$</h4>
+                                    <button class="btn btn-primary">Pagar</button>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -138,7 +143,7 @@
                         <div class="container__holder" id="huawei">
 
                             <div class="container__holder_img">
-                                <img src="https://content1.rozetka.com.ua/goods/images/big/275573118.jpg"
+                                <img class="img_phone" src="https://content1.rozetka.com.ua/goods/images/big/275573118.jpg"
                                     alt="image-of-phone">
                                 <img class="img_icon" src="https://cdn-icons-png.flaticon.com/128/882/882840.png"
                                     alt="icon-huawei">
@@ -152,7 +157,7 @@
                     <a href="#"> <!--Poner link!!!!!!!!!-->
                         <div class="container__holder" id="iphone">
                             <div class="container__holder_img">
-                                <img src="https://m.media-amazon.com/images/I/61Z9q1+EINL._AC_SX569_.jpg"
+                                <img class="img_phone" src="https://m.media-amazon.com/images/I/61Z9q1+EINL._AC_SX569_.jpg"
                                     alt="image-of-phone">
                                 <img src="https://cdn-icons-png.flaticon.com/128/12940/12940283.png" alt="icon-iphone">
                             </div>
@@ -165,7 +170,7 @@
                     <a href="#"> <!--Poner link!!!!!!!!!-->
                         <div class="container__holder" id="motorola">
                             <div class="container__holder_img">
-                                <img src="https://content.rozetka.com.ua/goods/images/big/319076455.jpg"
+                                <img class="img_phone" src="https://content.rozetka.com.ua/goods/images/big/319076455.jpg"
                                     alt="image-of-phone">
                                 <img src="https://cdn-icons-png.flaticon.com/128/882/882809.png" alt="icon-motorola">
                             </div>
@@ -178,7 +183,7 @@
                     <a href="#"> <!--Poner link!!!!!!!!!-->
                         <div class="container__holder" id="oppo">
                             <div class="container__holder_img">
-                                <img src="https://content2.rozetka.com.ua/goods/images/big/374400998.jpg"
+                                <img class="img_phone"src="https://content2.rozetka.com.ua/goods/images/big/374400998.jpg"
                                     alt="image-of-phone">
                                 <img src="https://cdn-icons-png.flaticon.com/128/882/882847.png" alt="icon-oppo">
                             </div>
@@ -191,7 +196,7 @@
                     <a href="#"> <!--Poner link!!!!!!!!!-->
                         <div class="container__holder" id="samsung">
                             <div class="container__holder_img">
-                                <img src="https://content2.rozetka.com.ua/goods/images/big/321452589.jpg"
+                                <img class="img_phone"src="https://content2.rozetka.com.ua/goods/images/big/321452589.jpg"
                                     alt="image-of-phone">
                                 <img src="https://cdn-icons-png.flaticon.com/128/5969/5969116.png" alt="icon-samsung">
                             </div>
@@ -204,7 +209,7 @@
                     <a href="#"> <!--Poner link!!!!!!!!!-->
                         <div class="container__holder" id="xiaomi">
                             <div class="container__holder_img">
-                                <img src="https://i.citrus.world/imgcache/size_800/uploads/shop/f/7/f7ea7fe12021df8f73784c0e9f7a939c.jpg"
+                                <img class="img_phone" src="https://i.citrus.world/imgcache/size_800/uploads/shop/f/7/f7ea7fe12021df8f73784c0e9f7a939c.jpg"
                                     alt="image-of-phone">
                                 <img src="https://cdn-icons-png.flaticon.com/128/732/732148.png" alt="icon-xiaomi">
                             </div>
@@ -346,15 +351,18 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/5.png" class="d-block w-100" alt="...">
+                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/5.png"
+                                class="d-block w-100" alt="...">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/6.png" class="d-block w-100" alt="...">
+                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/6.png"
+                                class="d-block w-100" alt="...">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/7.png" class="d-block w-100" alt="...">
+                            <img src="/Users/sandramedinaluque/Desktop/FemCoders/Copia-Fem/Copia Fem-tech-Innovations/Images/7.png"
+                                class="d-block w-100" alt="...">
                         </div>
 
                     </div>
@@ -372,41 +380,41 @@
                     </button>
 
                 </div>
-                
+
             </div>
 
-           
 
-           
+
+
         </div>
 
 
 
         <!-------------------------------FOOTER------------------------------------------>
-      <div container></div>
+        <div container></div>
         <footer class="footbar">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contacta con Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Preguntas Frecuentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Política de Privacidad</a>
-            </li>
-          </ul>
-          <div class="icons">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-whatsapp"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-youtube"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-twitter"></i>
-        </div>
-          
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contacta con Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Política de Privacidad</a>
+                </li>
+            </ul>
+            <div class="icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+
         </footer>
-      </div>
+    </div>
     </div>
 
 </body>
