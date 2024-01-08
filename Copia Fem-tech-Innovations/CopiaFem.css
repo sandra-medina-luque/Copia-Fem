@@ -562,10 +562,10 @@ i {
     .img_phone {
         display: none;
     }
-.img_icon {
-    margin-top: 50%;
-    height: 20px !important;
-}
+    .img_icon {
+        margin: 10px auto;
+        height: 20px !important;
+    }
 #filter {
     display: none;
 }
