@@ -457,9 +457,10 @@ i {
     color: gold;
 }
 
-.resp{
+.resp {
     margin-right: 20px;
 }
+
 .submenupago {
     display: flex;
     float: center;
@@ -538,37 +539,55 @@ i {
         justify-content: center;
         align-content: center;
     }
+
     .navbarright {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .icons {
         flex-direction: row;
         justify-content: center;
     }
+
+    .cart-content {
+        top: 30%;
+        right: -10%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+
+    }
+
     .content {
         flex-direction: column;
     }
+
     .sidebar {
         grid-area: 1, 1;
     }
+
     .carousel {
         grid-area: 1, 2;
     }
+
     .promotion {
         grid-area: 2, 2;
     }
+
     .img_phone {
         display: none;
     }
+
     .img_icon {
         margin: 10px auto;
         height: 20px !important;
     }
-#filter {
-    display: none;
-}
+
+    #filter {
+        display: none;
+    }
+
     /*#filter-form {
         display: none;
     }
@@ -585,36 +604,42 @@ i {
         flex-direction: row-reverse;
         justify-content: start;
     }
+
     #btn-filter {
         display: flex;
         margin: 5px;
         margin-right: 20%;
     }
+
     .title-label {
         display: none;
     }
+
     .container__holder_item {
         display: none;
     }
+
     .container__holder {
         flex-direction: row;
         justify-items: center;
         align-items: center;
     }
 
-.icons1{
-    
-  flex-direction: column;
-    
-}
+    .icons1 {
+
+        flex-direction: column;
+
+    }
 
     i {
         font-size: 30px;
         color: #000000;
-        
+
     }
 
-    .contactacn, .politicaprivacidad, .resp{
-       font-size: smaller;
+    .contactacn,
+    .politicaprivacidad,
+    .resp {
+        font-size: smaller;
     }
 }
