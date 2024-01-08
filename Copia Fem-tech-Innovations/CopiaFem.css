@@ -553,7 +553,7 @@ i {
     }
 
     .cart-content {
-        top: 30%;
+        top: 50%;
         right: -10%;
         transform: translate(-50%, -50%);
         z-index: 1000;
@@ -593,8 +593,6 @@ i {
         grid-column: 1;
         margin-top: 5%;
     }
-
-    .container {}
 
     .container__holder_img {
         width: 30px;
