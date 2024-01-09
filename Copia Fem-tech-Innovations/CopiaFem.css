@@ -405,6 +405,7 @@ nav {
     background: #fff;
     border: 1px solid #ccc;
     padding: 10px;
+    margin-left: -20px;
 }
 
 .contactacn:hover .popup1 {
